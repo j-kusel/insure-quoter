@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- jQuery JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Tabbing functions -->
+  <script src="js/tabbing.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <img id="background" src="images/home_edit.jpg" />
+
+  <header>
+
+    <img id="logo" src="images/logo.svg" />
+
+  </header>
+
+  <h1>Rates as low as 3.375%</h1>
+  <form id="quoteform">
+      <div class="form-group col-sm-3 panel panel-default question">
+          <label for="zip-code">Where do you live?</label>
+          <div class="input-group">
+              <input type="text" class="form-control" id="zipcode" name="zipcode" aria-describedby="zipHelp" placeholder="Zip Code">
+              <span class="input-group-btn">
+                  <button type="button" class="btn btn-primary" onclick="changeForm()">Next</button>
+              </span> 
+          </div>
+          <small id="zipHelp" class="form-text">This helps us find providers in your area.</small>
+      </div>
+      <div class="form-group col-sm-3 panel panel-default question">
+          <label for="home-type">What feels like home?</label>
+          <div class="input-group">
+              <select class="form-control" id="hometype" name="hometype">
+                  <option value="0">Single Family</option>
+                  <option value="1">Multi-unit</option>
+                  <option value="2">Condo</option>
+                  <option value="3">Co-op</option>
+              </select>
+              <span class="input-group-btn">
+                  <button type="button" onclick="changeForm()" class="btn btn-primary">Next</button>
+              </span> 
+          </div>
+      </div>
+      <div class="form-group col-sm-3 panel panel-default question">
+          <label for="credit-score">How is your credit?</label>
+          <div class="input-group">
+              <select class="form-control" id="credit-score" name="creditscore">
+                  <option value="0">680 - 699</option>
+                  <option value="1">700 - 719</option>
+                  <option value="2">720 - 739</option>
+                  <option value="3">740+</option>
+              </select>
+              <span class="input-group-btn">
+                  <button type="button" onclick="changeForm()" class="btn btn-primary">Next</button>
+              </span> 
+          </div>
+      </div>
+
+      <div class="form-group col-sm-3 panel panel-default question">
+          <label for="purchase-refinance">Are you purchasing or refinancing?</label>
+          <label class="radio-inline"><input type="radio" id="purchase" value="purchase" name="PR">Purchasing</label>
+          <label class="radio-inline"><input type="radio" id="refinance" value="refinance" name="PR">Refinancing</label>
+          <button type="submit" class="btn btn-success radio-inline">Get Quote</button>
+          </div>
+      </div>
+
+  </form>
+
+
+  <footer>
+      <div class="footer-top">
+          <span class="copyright">© 2018 Home Loan Quoter</span>
+          <span class="disclaimer"><a>Privacy Policy</a></span>
+          <span class="disclaimer"><a>Terms of Use</a></span>
+      </div>
+
+
+  </footer>
+
+</body>
+
+</html>
