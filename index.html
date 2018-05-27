@@ -22,13 +22,24 @@
 
   <header>
 
-    <img id="logo" src="images/logo.svg" />
+    <img id="logo" src="images/insure-quoter-logo.svg" />
 
   </header>
 
   <h1 id="heading">Rates as low as 3.375%</h1>
 
-  <form id="quoteform">
+  <div id="spacer">
+  </div>
+
+  <div class="panel1">
+
+  </div>
+  <div class="panel2">
+
+  </div>
+
+
+  <!--<form id="quoteform">
       <div class="form-group col-sm-3 panel panel-default question">
           <label for="zip-code">Where do you live?</label>
           <div class="input-group">
@@ -76,14 +87,47 @@
           </div>
       </div>
 
-  </form>
+  </form>-->
 
+  <!-- TERMS OF USE -->
+  <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="termsModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  terms of use
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- PRIVACY POLICY -->
+  <div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="privacyModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  lorem ipsum
+              </div>
+          </div>
+      </div>
+  </div>
 
   <footer>
       <div class="footer-top">
           <span class="copyright">© 2018 Home Loan Quoter</span>
-          <span class="disclaimer"><a>Privacy Policy</a></span>
-          <span class="disclaimer"><a>Terms of Use</a></span>
+          <span class="disclaimer"><button type="button" data-toggle="modal" data-target="#privacyModal">Privacy Policy</button></span>
+          <span class="disclaimer"><button type="button" data-toggle="modal" data-target="#termsModal">Terms of Use</button></a></span>
       </div>
 
 

@@ -2,15 +2,18 @@
 
 body {
   margin: 0;
+  overflow: scroll;
 }
 
 footer {
+  position: relative;
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-color: #345;
-  position: absolute;
-  bottom: 0;
+  
 }
+
+
 
 /*h1 {
   position: absolute;
@@ -63,30 +66,54 @@ footer {
 
 /* IDs */
 
-/*#background {
-  position: absolute;
-  width: 100%;
-  height: 100%
-}*/
-
-#logo {
-  width: 250px;
-  position: absolute;
-  top: 30px;
-  left: 250px;
-}
-
 
 /* Media queries */
 
+/* LAPTOP */
 @media only screen and (min-device-width: 1200px) {
   body {
     background: url('../images/beach_fam.jpg') ;
     background-size: 100%;
     background-repeat: no-repeat;
   }
+
+  #logo {
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+  }
+
+  #heading {
+    position: absolute;
+    top: 250px;
+    left: 270px;
+  }
+
+  #spacer {
+    position: relative;
+    width: 100%;
+    height: 700px;
+  }
+
+
+  .panel1 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+  }
+
+  .panel2 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: pink;
+  }
+
 }
 
+/* IPHONE 6S  
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   body {
     background: url('../images/beach_fam.jpg');
@@ -101,8 +128,64 @@ footer {
 
   #heading {
     position: absolute;
-    top: 300px;
-    padding-left: 13%;
+    top: 500px;
+    left: 20%;
   }
+
+}
+*/
+
+/* IPHONE 5 */ 
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  body {
+    background: url('../images/iPhone5.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  #logo {
+    width: 75%;
+    position: absolute;
+    top: 30px;
+    left: 12.5%;
+  }
+
+  #heading {
+    position: absolute;
+    top: 500px;
+    left: 20%;
+  }
+
+  .panel1 {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-color: white;
+  }
+
+  #spacer {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+  }
+  
+  .copyright {
+    position: relative;
+    padding: 5px;
+    font-size: 1.5em;
+
+    color: #EEEEEE;
+    float: left;
+  }
+
+  .disclaimer {
+    text-decoration: none;
+    font-size: 1.5em;
+    position: relative;
+    color: #EEEEEE;
+    padding: 5px;
+    float: right;
+  }
+
 
 }
