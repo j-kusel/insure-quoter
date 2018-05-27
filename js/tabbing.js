@@ -7,7 +7,7 @@ $(document).ready(function() {
     $('#quoteform').submit(function(e) {
         e.preventDefault();
         var data = {};
-        $('#quoteform').serializeArray().map(input => {
+        $('#quoteform').serializeArray().map(function (input) {
             console.log(input);
             data[input.name] = input.value;
         });
@@ -24,7 +24,7 @@ function changeCard() {
     var cards = $('.panel1').find('.carousel');
     $(cards[currentCard % 3]).fadeOut(300)
         .promise()
-        .done(() => {
+        .done(function () {
             currentCard += 1;
             $(cards[currentCard % 3]).fadeIn(300);
         });
@@ -34,7 +34,7 @@ function changeForm() {
     var questions = $('form').find('.question');
     $(questions[currentForm]).fadeOut(300)
         .promise()
-        .done(() => {
+        .done(function () {
             currentForm += 1;
             $(questions[currentForm]).fadeIn(300);
         });
