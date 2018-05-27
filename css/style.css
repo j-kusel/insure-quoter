@@ -3,6 +3,7 @@
 body {
   margin: 0;
   overflow: scroll;
+  font-family: 'PT Sans', sans-serif;
 }
 
 footer {
@@ -23,6 +24,7 @@ footer {
 }*/
 
 
+
 /* classes*/
 
 .question {
@@ -32,6 +34,17 @@ footer {
     left: 250px;
     top: 250px;
     display: none;
+}
+
+.carousel {
+    position: relative;
+    height: 200px;
+    display: none;
+}
+
+.descriptor {
+    position: absolute;
+    top: calc(50% - 100px);
 }
 
 .btn-align {
@@ -86,6 +99,7 @@ footer {
 
   #heading {
     position: absolute;
+    display: none;
     top: 250px;
     left: 270px;
   }
