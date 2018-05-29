@@ -17,6 +17,7 @@
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
+  <!-- Main Styles -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
@@ -37,7 +38,7 @@
 
   <div class="container panel1">
       <h2 class="text-center carousel-header"><strong>Getting a quote on your health insurance has never been easier.</strong></h2>
-      <div class="row carousel" style="display: none;">
+      <!-- <div class="row carousel" style="display: none;">
           <div class="col-sm-5">
               <svg class="pull-right" width="100" height="100">
                   <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
@@ -62,16 +63,54 @@
               </svg>
           </div>
           <h3 class="col-sm-7">You save time and money by getting the best quote, fast.</h3>
+      </div> -->
+      <div class="svg-container">
+        <svg class="checklist" viewBox="0 0 223.89 279.5">
+          <rect class="checklist-outline" x="5.5" y="5.5" width="212.89" height="268.5"/>
+          <line class="checklist-lines" id="checklist-line-1" x1="55.94" y1="90.39" x2="167.95" y2="90.39"/>
+          <line class="checklist-lines" id="checklist-line-2" x1="55.94" y1="128.27" x2="167.95" y2="128.27"/>
+          <line class="checklist-lines" id="checklist-line-3" x1="55.94" y1="166.16" x2="167.95" y2="166.16"/>
+          <line class="checklist-lines" id="checklist-line-4" x1="55.94" y1="204.04" x2="167.95" y2="204.04"/>
+          <polyline class="checklist-checkmark" points="146.91 41.1 164.61 58.8 197.18 26.22"/>
+        </svg>
+        <p class="svg-text" id="svg-text-1">
+          Tell us a little about yourself.
+        </p>
+      </div>
+      <div class="svg-container">
+        <svg class="computer" viewBox="0 0 124 114">
+            <rect class="computer-panels" x="42" y="82" width="40" height="20"/>
+            <rect class="computer-panels" x="2" y="2" width="120" height="80" rx="12" ry="12"/>
+            <rect class="computer-screen" x="12" y="12" width="100" height="60" rx="3.57" ry="3.57"/>
+            <rect class="computer-base" x="2" y="102" width="120" height="10"/>
+            <line class="computer-lines" id="computer-line-1" x1="32" y1="32" x2="92" y2="32"/>
+            <line class="computer-lines" id="computer-line-2" x1="32" y1="45.33" x2="92" y2="45.33"/>
+            <line class="computer-lines" id="computer-line-3" x1="32" y1="58.67" x2="92" y2="58.67"/>
+            <rect class="computer-blip" x="97" y="17" width="10" height="10" rx="2.21" ry="2.21"/>
+        </svg>
+        <p class="svg-text" id="svg-text-2">
+          We'll generate a list of providers that fit for you.
+        </p>
+      </div>
+      <div class="svg-container">
+        <svg class="cross" viewBox="0 0 100 100">
+            <circle class="cross-border" id="cross-border-1" cx="48.84" cy="48.84" r="47.84"/>
+            <circle class="cross-border" id="cross-border-2" cx="48.84" cy="48.84" r="45.87"/>
+            <path class="cross-cross" d="M76.64,36.45H61.22V21A4.25,4.25,0,0,0,57,16.79H40.7A4.25,4.25,0,0,0,36.45,21V36.45H21a4.25,4.25,0,0,0-4.25,4.25V57A4.25,4.25,0,0,0,21,61.22H36.45V76.64a4.24,4.24,0,0,0,4.25,4.24H57a4.24,4.24,0,0,0,4.25-4.24V61.22H76.64A4.24,4.24,0,0,0,80.88,57V40.7A4.24,4.24,0,0,0,76.64,36.45Z"/>
+        </svg>
+        <p class="svg-text" id="svg-text-3">
+          Relax knowing that you and your family are insured.
+        </p>
       </div>
 
   </div>
-  <div class="panel2">
+  <!-- <div class="panel2">
       <h2 class="text-center scroll-text">Insurance doesn't have to be hard.</h2>
       <div class="text-center scroll-button">
-        <button type="button" onclick="topScroll()" class="btn btn-success">Get Quote Now!</button>
+        <button type="button" onclick="topScroll()" class="btn btn-success">Get a Quote Now!</button>
       </div>
 
-  </div>
+  </div> -->
 
 
   <!-- TERMS OF USE -->
@@ -118,6 +157,9 @@
 
 
   </footer>
+
+  <!-- SVG Animations -->
+  <script src="js/animation.js"></script>
 
 </body>
 
