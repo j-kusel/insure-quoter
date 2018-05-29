@@ -75,7 +75,7 @@ footer {
 
 .carousel-header {
     padding: 0px 0px;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 40px;
 }
 
@@ -264,7 +264,7 @@ footer {
 }
 
 .svg-text {
-  font-size: 20px;
+  font-size: 18px;
   width: 80%;
   margin: 0 auto;
   padding-top: 25px;
@@ -294,11 +294,11 @@ footer {
   }
 
   #logo {
-    width: 80px;
+    width: 120px;
     position: absolute;
     top: 15px;
-    /* left: calc(50% - 60px); */
-    left: 250px;
+    left: calc(50% - 60px);
+    /* left: 250px; */
   }
 
   #heading {
@@ -331,7 +331,7 @@ footer {
   .panel1 {
     position: relative;
     padding-top: 15px;
-    width: 65%;
+    width: 75%;
     height: 500px;
     /* background-color: pink; */
   }
