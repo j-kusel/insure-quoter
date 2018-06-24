@@ -3,16 +3,22 @@
 
 <head>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!-- jQuery JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+  <!-- Popper JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" crossorigin="anonymous"></script>
+
   <!-- Bootstrap JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <!-- Tabbing functions -->
   <script src="js/tabbing.js"></script>
+
+  <!-- Form functions -->
+  <script src="js/form.js"></script>
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
@@ -29,6 +35,148 @@
     <img id="logo" src="images/insure-quoter-logo-black.svg" />
 
   </header>
+
+  <form class="sm-8 offset-sm-2">
+      <div class="form-row">
+          <div class="form-group col-sm-3">
+              <input type="text" class="form-control" id="firstName" placeholder="First Name">
+          </div>
+          <div class="form-group col-sm-3">
+              <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+          </div>
+          <div class="form-group col-sm-2">
+              <input type="text" class="form-control" id="zipcode" placeholder="Zipcode">
+          </div>
+
+      </div>
+      <div class="form-row">
+          <div class="form-group col-sm-4">
+              <input type="text" class="form-control" id="address" placeholder="Street Address">
+          </div>
+          <div class="form-group col-sm-4">
+              <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group col-sm-4">
+              <input type="email" class="form-control" id="email" placeholder="Email Address">
+          </div>
+          <div class="form-group col-sm-2">
+              <select class="form-control">
+                  <option selected>Gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+              </select>
+          </div>
+      </div>
+      <div class="form-row">
+
+          <!-- Birthdate -->
+          
+          <div class="form-group col-sm-4">
+              <div class="btn-group btn-group-sm d-flex">
+                  <div class="btn-group btn-group-sm w-100" role="group">
+                      <span class="btn btn-sm disabled w-100" style="cursor: auto">Date of Birth:</span>
+
+                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Month</button>
+                      <div class="dropdown-menu" id="month" aria-labelledby="dropdownMenu1">
+                          <h6 class="dropdown-header">Month</h6>
+                          <button class="dropdown-item" type="button">01</button>
+                          <button class="dropdown-item" type="button">02</button> 
+                      </div>
+                  </div>
+                  <div class="btn-group btn-group-sm" role="group">
+                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Day</button>
+                      <div class="dropdown-menu" id="day" aria-labelledby="dropdownMenu2">
+                          <h6 class="dropdown-header">Day</h6>
+                          <button class="dropdown-item" type="button">01</button>
+                          <button class="dropdown-item" type="button">02</button> 
+                      </div>
+                  </div>
+                  <div class="btn-group btn-group-sm" role="group">
+                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Year</button>
+                      <div class="dropdown-menu" id="year" aria-labelledby="dropdownMenu3">
+                          <h6 class="dropdown-header">Year</h6>
+                          <button class="dropdown-item" type="button">01</button>
+                          <button class="dropdown-item" type="button">02</button> 
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Stats -->
+          <div class="form-group col-sm-2">
+              <div class="btn-group btn-group-sm d-flex" role="group">
+                  <span class="btn btn-sm disabled w-100" style="cursor: auto">Weight</span>
+
+                  <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">lbs.</button>
+                  <div class="dropdown-menu" id="weight" aria-labelledby="dropdownMenu1">
+                      <h6 class="dropdown-header">Weight</h6>
+                      <button class="dropdown-item" type="button">4'</button>
+                      <button class="dropdown-item" type="button">5'</button> 
+                      <button class="dropdown-item" type="button">6'</button> 
+                      <button class="dropdown-item" type="button">7'</button> 
+                  </div>
+              </div>
+          </div>
+
+          <div class="form-group col-sm-2">
+              <div class="btn-group btn-group-sm d-flex" role="group">
+                  <div class="btn-group btn-group-sm w-100" role="group">
+                      <span class="btn btn-sm disabled w-100">Height</span>
+                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ft.</button>
+                      <div class="dropdown-menu" id="weight" aria-labelledby="dropdownMenu1">
+                          <h6 class="dropdown-header">Ft.</h6>
+                          <button class="dropdown-item" type="button">7'</button>
+                          <button class="dropdown-item" type="button">8'</button> 
+                      </div>
+                  </div>
+                  <div class="btn-group btn-group-sm" role="group">
+                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">In.</button>
+                      <div class="dropdown-menu" id="weight" aria-labelledby="dropdownMenu1">
+                          <h6 class="dropdown-header">In.</h6>
+                          <button class="dropdown-item" type="button">0"</button>
+                          <button class="dropdown-item" type="button">1"</button> 
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      <!-- end of form-row -->
+      </div>
+      <div class="form-row">
+          <div class="form-group">
+              <div class="btn-group btn-group-sm btn-group-justified" role="group">
+                  <span class="btn btn-sm disabled">Family Size:</span>
+                  <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ft.</button>
+                  <div class="dropdown-menu" id="weight" aria-labelledby="dropdownMenu1">
+                      <h6 class="dropdown-header">Size</h6>
+                      <button class="dropdown-item" type="button">1</button>
+                      <button class="dropdown-item" type="button">2</button> 
+                      <button class="dropdown-item" type="button">3</button>
+                      <button class="dropdown-item" type="button">4</button> 
+                      <button class="dropdown-item" type="button">5+</button> 
+                  </div>
+              </div>
+              <div class="btn-group btn-group-sm" role="group">
+                  <span class="btn btn-sm disabled">Income:</span>
+                  <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ft.</button>
+                  <div class="dropdown-menu" id="weight" aria-labelledby="dropdownMenu1">
+                      <h6 class="dropdown-header">Income</h6>
+                      <button class="dropdown-item" type="button">$10k - $20k</button>
+                      <button class="dropdown-item" type="button">$20k - $40k</button> 
+                      <button class="dropdown-item" type="button">$40k - $70k</button>
+                      <button class="dropdown-item" type="button">$70k+</button> 
+                  </div>
+              </div>
+
+
+        
+    </div>
+
+  </div>
+
+  </form>
 
   <h1 id="heading">Why should you pay more for <strong>health insurance?</strong></h1>
 
