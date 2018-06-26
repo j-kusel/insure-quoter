@@ -5,6 +5,24 @@ body {
   overflow: scroll;
   font-family: 'PT Sans', sans-serif;
   overflow-x: hidden;
+} 
+
+.form {
+  position: absolute;
+  top: 20vh;
+  left: 25%;
+}
+
+#form-card {
+  border: none;
+  width: 50%;
+}
+
+
+
+span {
+  opacity: 1.0 !important;
+  background-color: white;
 }
 
 footer {
@@ -247,6 +265,8 @@ footer {
     border-bottom: solid 1px #666;
 }
 
+
+
 .question {
     position: absolute;
     background-color: rgba(255,255,255,0.4);
@@ -274,6 +294,21 @@ footer {
 
 /* IDs */
 
+#header-phone {
+    padding-top: 20px;
+}
+
+#title-phone {
+    margin: 0px;
+}
+
+#icon-phone {
+    padding-right: 2%;
+}
+
+#page-title {
+    padding-top: 60px;
+}
 
 /* Media queries */
 
@@ -297,7 +332,7 @@ footer {
     width: 120px;
     position: absolute;
     top: 15px;
-    left: calc(50% - 60px);
+    left: calc(20% - 60px);
     /* left: 250px; */
   }
 

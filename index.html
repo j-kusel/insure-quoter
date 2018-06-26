@@ -33,68 +33,83 @@
   <header>
 
     <img id="logo" src="images/insure-quoter-logo-black.svg" />
+    <div class="col-sm-4 offset-sm-7" id="header-phone">
+        <h4 class="text-right" id="title-phone">Speak to a licensed agent:</h2>
+        <h5 class="float-right">888-201-5723</h5>
+        <img id="icon-phone" src="images/glyphicons-442-phone-alt.png" class="float-right"/>
+    </div>
 
   </header>
+  <div class="container">
+      <h1 class="text-center" id="page-title">Health Insurance quotes in minutes - <strong class="text-danger">Save up to 30%</strong></h1>
+  </div>
 
-  <form class="sm-8 offset-sm-2">
+
+  <div class="container card bg-transparent mx-auto form" id="form-card">
+      <div class="card-body">
+          <h5 class="card-title text-center" id="form-title"><strong class="accent-title text-danger">Free quotes</strong> from top insurance providers in just a few easy steps.</h5>
+
+  <form>
       <div class="form-row">
-          <div class="form-group col-sm-3">
+          <!-- First Name -->
+          <div class="form-group col-sm-6">
               <input type="text" class="form-control" id="firstName" placeholder="First Name">
           </div>
-          <div class="form-group col-sm-3">
+          
+          <!-- Last Name -->
+          <div class="form-group col-sm-6">
               <input type="text" class="form-control" id="lastName" placeholder="Last Name">
           </div>
-          <div class="form-group col-sm-2">
-              <input type="text" class="form-control" id="zipcode" placeholder="Zipcode">
-          </div>
-
       </div>
       <div class="form-row">
-          <div class="form-group col-sm-4">
-              <input type="text" class="form-control" id="address" placeholder="Street Address">
-          </div>
-          <div class="form-group col-sm-4">
+
+          <!-- Phone -->
+          <div class="form-group col-sm-6">
               <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
           </div>
-      </div>
-      <div class="form-row">
-          <div class="form-group col-sm-4">
+
+          <!-- Email -->
+          <div class="form-group col-sm-6">
               <input type="email" class="form-control" id="email" placeholder="Email Address">
           </div>
-          <div class="form-group col-sm-2">
-              <select class="form-control">
-                  <option selected>Gender</option>
-                  <option>Male</option>
-                  <option>Female</option>
-              </select>
+      </div>
+      <div class="form-row">
+          <!-- Address -->
+
+          <div class="form-group col-sm-8">
+              <input type="text" class="form-control" id="address" placeholder="Street Address">
+          </div>
+          <!-- Zipcode -->
+          <div class="form-group col-sm-4">
+              <input type="text" class="form-control" id="zipcode" placeholder="Zipcode">
           </div>
       </div>
       <div class="form-row">
 
           <!-- Birthdate -->
           
-          <div class="form-group col-sm-4">
+          <div class="form-group col-sm-8">
               <div class="btn-group btn-group-sm d-flex">
                   <div class="btn-group btn-group-sm w-100" role="group">
-                      <span class="btn btn-sm disabled w-100" style="cursor: auto">Date of Birth:</span>
+                      <span class="btn btn-sm disabled w-100" style="cursor: auto">Birthdate:</span>
 
-                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Month</button>
-                      <div class="dropdown-menu" id="month" aria-labelledby="dropdownMenu1">
+                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdown-month" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Month</button>
+                      <div class="dropdown-menu" id="month" aria-labelledby="dropdown-month">
                           <h6 class="dropdown-header">Month</h6>
                           <button class="dropdown-item" type="button">01</button>
                           <button class="dropdown-item" type="button">02</button> 
                       </div>
                   </div>
                   <div class="btn-group btn-group-sm" role="group">
-                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Day</button>
-                      <div class="dropdown-menu" id="day" aria-labelledby="dropdownMenu2">
+                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdown-day" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Day</button>
+                      <div class="dropdown-menu" id="day" aria-labelledby="dropdown-day">
                           <h6 class="dropdown-header">Day</h6>
                           <button class="dropdown-item" type="button">01</button>
                           <button class="dropdown-item" type="button">02</button> 
                       </div>
                   </div>
                   <div class="btn-group btn-group-sm" role="group">
-                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Year</button>
+                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdown-year" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Year</button>
                       <div class="dropdown-menu" id="year" aria-labelledby="dropdownMenu3">
                           <h6 class="dropdown-header">Year</h6>
                           <button class="dropdown-item" type="button">01</button>
@@ -104,13 +119,28 @@
               </div>
           </div>
 
+          <!-- Gender -->
+          <div class="form-group col-sm-4">
+              <div class="btn-group btn-group-sm d-flex" role="group">
+                  <span class="btn btn-sm disabled w-100">Gender</span>
+                  <button class="btn btn-sm dropdown-toggle" type="button" id="dropdown-gender" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select...</button>
+                  <div class="dropdown-menu" id="gender" aria-labelledby="dropdown-gender">
+                      <h6 class="dropdown-header">Gender</h6>
+                      <button class="dropdown-item" type="button">F</button>
+                      <button class="dropdown-item" type="button">M</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+
           <!-- Stats -->
-          <div class="form-group col-sm-2">
+          <div class="form-group col-sm-6">
               <div class="btn-group btn-group-sm d-flex" role="group">
                   <span class="btn btn-sm disabled w-100" style="cursor: auto">Weight</span>
 
-                  <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">lbs.</button>
-                  <div class="dropdown-menu" id="weight" aria-labelledby="dropdownMenu1">
+                  <button class="btn btn-sm dropdown-toggle" type="button" id="dropdown-weight" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">lbs.</button>
+                  <div class="dropdown-menu" id="weight" aria-labelledby="dropdown-weight">
                       <h6 class="dropdown-header">Weight</h6>
                       <button class="dropdown-item" type="button">4'</button>
                       <button class="dropdown-item" type="button">5'</button> 
@@ -120,20 +150,20 @@
               </div>
           </div>
 
-          <div class="form-group col-sm-2">
+          <div class="form-group col-sm-6">
               <div class="btn-group btn-group-sm d-flex" role="group">
                   <div class="btn-group btn-group-sm w-100" role="group">
                       <span class="btn btn-sm disabled w-100">Height</span>
-                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ft.</button>
-                      <div class="dropdown-menu" id="weight" aria-labelledby="dropdownMenu1">
+                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdown-height-ft" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ft.</button>
+                      <div class="dropdown-menu" id="height-ft" aria-labelledby="dropdown-height-ft">
                           <h6 class="dropdown-header">Ft.</h6>
                           <button class="dropdown-item" type="button">7'</button>
                           <button class="dropdown-item" type="button">8'</button> 
                       </div>
                   </div>
                   <div class="btn-group btn-group-sm" role="group">
-                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">In.</button>
-                      <div class="dropdown-menu" id="weight" aria-labelledby="dropdownMenu1">
+                      <button class="btn btn-sm dropdown-toggle" type="button" id="dropdown-height-in" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">In.</button>
+                      <div class="dropdown-menu" id="height-in" aria-labelledby="dropdown-height-in">
                           <h6 class="dropdown-header">In.</h6>
                           <button class="dropdown-item" type="button">0"</button>
                           <button class="dropdown-item" type="button">1"</button> 
@@ -141,15 +171,13 @@
                   </div>
               </div>
           </div>
-
-      <!-- end of form-row -->
       </div>
-      <div class="form-row">
-          <div class="form-group">
-              <div class="btn-group btn-group-sm btn-group-justified" role="group">
-                  <span class="btn btn-sm disabled">Family Size:</span>
-                  <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ft.</button>
-                  <div class="dropdown-menu" id="weight" aria-labelledby="dropdownMenu1">
+      <div class="row">
+          <div class="form-group col-sm-6">
+              <div class="btn-group btn-group-sm d-flex" role="group">
+                  <span class="btn btn-sm disabled w-100">Family Size:</span>
+                  <button class="btn btn-sm dropdown-toggle" type="button" id="dropdown-family" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Size...</button>
+                  <div class="dropdown-menu" id="family" aria-labelledby="dropdown-family">
                       <h6 class="dropdown-header">Size</h6>
                       <button class="dropdown-item" type="button">1</button>
                       <button class="dropdown-item" type="button">2</button> 
@@ -158,10 +186,14 @@
                       <button class="dropdown-item" type="button">5+</button> 
                   </div>
               </div>
-              <div class="btn-group btn-group-sm" role="group">
-                  <span class="btn btn-sm disabled">Income:</span>
-                  <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ft.</button>
-                  <div class="dropdown-menu" id="weight" aria-labelledby="dropdownMenu1">
+          </div>
+
+
+          <div class="form-group col-sm-6">
+              <div class="btn-group btn-group-sm d-flex" role="group">
+                  <span class="btn btn-sm disabled w-100">Income:</span>
+                  <button class="btn btn-sm dropdown-toggle" type="button" id="dropdown-income" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Income...</button>
+                  <div class="dropdown-menu" id="income" aria-labelledby="dropdown-income">
                       <h6 class="dropdown-header">Income</h6>
                       <button class="dropdown-item" type="button">$10k - $20k</button>
                       <button class="dropdown-item" type="button">$20k - $40k</button> 
@@ -169,6 +201,17 @@
                       <button class="dropdown-item" type="button">$70k+</button> 
                   </div>
               </div>
+          </div>
+      <!-- end of form-row -->
+      </div>
+      <div class="form-actions text-center">
+      
+          <button class="btn btn-sm btn-danger">GET YOUR FREE QUOTE!</button>
+      </div>
+
+
+
+
 
 
         
@@ -177,9 +220,12 @@
   </div>
 
   </form>
+  </div>
+  </div>
 
+  <!--
   <h1 id="heading">Why should you pay more for <strong>health insurance?</strong></h1>
-
+  -->
 
   <div id="spacer">
   </div>

@@ -1,12 +1,9 @@
 $(document).ready(function () {
-    $('#month button').on('click', function () {
-        $('#dropdownMenu1').text($(this).text());
+    var dropdowns = ['month', 'day', 'year', 'gender', 'weight', 'height-ft', 'height-in', 'family', 'income'];
+    dropdowns.forEach(function (dd) {
+        $(`#${dd} button`).on('click', function () {
+            $(`#dropdown-${dd}`).text($(this).text());
+        });
     });
-    $('#day button').on('click', function () {
-        $('#dropdownMenu2').text($(this).text());
-    });
-    $('#year button').on('click', function () {
-        $('#dropdownMenu3').text($(this).text());
-    });  
 });
 
