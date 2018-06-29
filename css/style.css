@@ -93,6 +93,7 @@ footer {
 
 .carousel-header {
     padding: 0px 0px;
+    margin-top: 20px;
     font-size: 25px;
     margin-bottom: 40px;
 }
@@ -276,6 +277,22 @@ footer {
     display: none;
 }
 
+.rate-div {
+    padding: 28px 10px 14px 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.agent {
+    color: white;
+    margin-bottom: 0px;
+}
+
+.return-btn {
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
 .svg-container {
   display: inline-block;
   float: left;
@@ -367,19 +384,40 @@ footer {
     position: relative;
     padding-top: 15px;
     width: 75%;
-    height: 500px;
+    height: 380px;
     /* background-color: pink; */
   }
 
   .panel2 {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 450px;
+    padding-top: 125px;
+  }
+
+  .panel3 {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 500px;
+    padding-top: 50px;
+  }
+
+  .panel4 {
+    position: relative;
+    height: 600px;
+    padding-top: 130px;
     background: url('../images/beach_pc.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    color: white;
-    position: relative;
-    width: 100%;
-    height: 500px;
-    padding-top: 150px;
+
+  }
+
+  .info {
+    width: 60%;
   }
 
   .scroll-text {

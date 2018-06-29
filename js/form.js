@@ -7,3 +7,6 @@ $(document).ready(function () {
     });
 });
 
+function scrollToTop() {
+    $("html").animate({scrollTop: 0}, "slow");
+}
